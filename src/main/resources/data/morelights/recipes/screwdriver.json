@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+   ["I  ",
+    " I ",
+    "  W"],
+  "key":
+  {
+    "W":
+    {
+      "tag": "minecraft:logs"
+    },
+    "I":
+    {
+      "tag": "forge:ingots/iron"
+    }
+  },
+  "result":{
+    "item": "morelights:yet_another_screwdriver",
+    "count": 1
+  }
+}

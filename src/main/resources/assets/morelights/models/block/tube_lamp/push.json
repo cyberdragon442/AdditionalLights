@@ -1,0 +1,90 @@
+{
+	"credit": "Made with Blockbench",
+	"render_type": "minecraft:cutout",
+	"textures": {
+		"0": "createaddition:block/connector/copper_push",
+		"4": "morelights:block/tube",
+		"particle": "create:block/andesite_casing"
+	},
+	"elements": [
+		{
+			"name": "Core",
+			"from": [7, 1, 7],
+			"to": [9, 5, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [15, 9, 15]},
+			"faces": {
+				"north": {"uv": [2, 0, 4, 4], "texture": "#0"},
+				"east": {"uv": [0, 0, 2, 4], "texture": "#0"},
+				"south": {"uv": [2, 0, 4, 4], "texture": "#0"},
+				"west": {"uv": [0, 0, 2, 4], "texture": "#0"},
+				"up": {"uv": [5, 9, 7, 11], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Outer",
+			"from": [6, 0, 6],
+			"to": [10, 2, 10],
+			"faces": {
+				"north": {"uv": [4, 6, 8, 8], "texture": "#0"},
+				"east": {"uv": [0, 6, 4, 8], "texture": "#0"},
+				"south": {"uv": [4, 6, 8, 8], "texture": "#0"},
+				"west": {"uv": [0, 6, 4, 8], "texture": "#0"},
+				"up": {"uv": [0, 8, 4, 12], "texture": "#0"},
+				"down": {"uv": [0, 12, 4, 16], "texture": "#0", "cullface": "down"}
+			}
+		},
+		{
+			"name": "OuterCap",
+			"from": [6, 3, 6],
+			"to": [10, 4, 10],
+			"faces": {
+				"north": {"uv": [4, 4, 8, 5], "texture": "#0"},
+				"east": {"uv": [0, 4, 4, 5], "texture": "#0"},
+				"south": {"uv": [4, 4, 8, 5], "texture": "#0"},
+				"west": {"uv": [0, 4, 4, 5], "texture": "#0"},
+				"up": {"uv": [4, 8, 8, 12], "texture": "#0"},
+				"down": {"uv": [4, 12, 8, 16], "texture": "#0"}
+			}
+		},
+		{
+			"name": "wireX",
+			"from": [8, 4, 6],
+			"to": [8, 13, 10],
+			"faces": {
+				"north": {"uv": [6, 0, 10, 9], "texture": "#4"},
+				"east": {"uv": [6, 0, 10, 9], "texture": "#4"},
+				"south": {"uv": [6, 0, 10, 9], "texture": "#4"},
+				"west": {"uv": [6, 0, 10, 9], "texture": "#4"},
+				"up": {"uv": [0, 0, 0, 0], "texture": "#4"},
+				"down": {"uv": [0, 0, 0, 0], "texture": "#4"}
+			}
+		},
+		{
+			"name": "wireY",
+			"from": [6, 4, 8],
+			"to": [10, 13, 8],
+			"faces": {
+				"north": {"uv": [6, 0, 10, 9], "texture": "#4"},
+				"east": {"uv": [6, 0, 10, 9], "texture": "#4"},
+				"south": {"uv": [6, 0, 10, 9], "texture": "#4"},
+				"west": {"uv": [6, 0, 10, 9], "texture": "#4"},
+				"up": {"uv": [0, 0, 0, 0], "texture": "#4"},
+				"down": {"uv": [0, 0, 0, 0], "texture": "#4"}
+			}
+		},
+		{
+			"name": "Tube",
+			"from": [5, 4, 5],
+			"to": [11, 16, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [13, 12, 13]},
+			"faces": {
+				"north": {"uv": [10, 0, 16, 12], "texture": "#4"},
+				"east": {"uv": [10, 0, 16, 12], "texture": "#4"},
+				"south": {"uv": [10, 0, 16, 12], "texture": "#4"},
+				"west": {"uv": [10, 0, 16, 12], "texture": "#4"},
+				"up": {"uv": [0, 0, 6, 6], "texture": "#4"},
+				"down": {"uv": [0, 0, 6, 6], "texture": "#4"}
+			}
+		}
+	]
+}

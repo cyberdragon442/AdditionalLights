@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "morelights:pyle_headlight",
+    "morelights:small_light_with_reflector",
+    "morelights:small_cage_light",
+    "morelights:small_tube_light",
+    "morelights:skinny_tube_light"
+  ]
+}
