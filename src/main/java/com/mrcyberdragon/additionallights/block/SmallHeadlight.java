@@ -22,7 +22,7 @@ public class SmallHeadlight extends AbstractConnectorBlock<SmallHeadlightEntity>
 
     public static final BooleanProperty POWERED = BlockStateProperties.POWERED;
 
-    public static final VoxelShaper CONNECTOR_SHAPE = CAShapes.shape(6, 0, 6, 10, 5, 10).add(3, 4, 3, 13, 13, 13).forDirectional();
+    public static final VoxelShaper CONNECTOR_SHAPE = CAShapes.shape(4, 0, 4, 12, 5, 12).add(1, 4, 1, 15, 13, 15).forDirectional();
     public SmallHeadlight(Properties properties) {
         super(properties);
     }

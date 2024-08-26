@@ -22,7 +22,7 @@ public class SmallCageLight extends AbstractConnectorBlock<SmallCageLightEntity>
 
     public static final BooleanProperty POWERED = BlockStateProperties.POWERED;
 
-    public static final VoxelShaper CONNECTOR_SHAPE = CAShapes.shape(6, 0, 6, 10, 5, 10).add(3, 4, 3, 13, 13, 13).forDirectional();
+    public static final VoxelShaper CONNECTOR_SHAPE = CAShapes.shape(6, 0, 6, 10, 5, 10).add(4, 4, 4, 12, 12, 12).forDirectional();
     public SmallCageLight(Properties properties) {
         super(properties);
     }

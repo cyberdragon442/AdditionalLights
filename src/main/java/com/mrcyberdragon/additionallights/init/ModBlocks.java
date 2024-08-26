@@ -44,6 +44,12 @@ public class ModBlocks {
             .item()
             .transform(customItemModel())
             .register();
+    public static final BlockEntry<SmallArmoredLight> SMALL_ARMORED_LIGHT = AdditionalLights.REGISTRATE.block("small_armored_light",  SmallArmoredLight::new)
+            .initialProperties(SharedProperties::stone)
+            .onRegister(AllMovementBehaviours.movementBehaviour(new NodeMovementBehaviour()))
+            .item()
+            .transform(customItemModel())
+            .register();
     public static void register() {
 
     }

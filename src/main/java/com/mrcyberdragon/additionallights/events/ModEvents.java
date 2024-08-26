@@ -21,7 +21,7 @@ public class ModEvents {
             if(event.getLevel().isClientSide()) return;
             BlockState state = event.getLevel().getBlockState(event.getPos());
             BlockEntity entity = event.getLevel().getBlockEntity(event.getPos());
-            if(event.getItemStack().getItem()==ModItems.YET_ANOTHER_SCREWDRIVER.get()&&(entity instanceof SmallLightConnectorBlockEntity||entity instanceof SmallLightWithReflectorEntity||entity instanceof SmallCageLightEntity||entity instanceof SmallTubeLightEntity||entity instanceof SkinnyTubeLightEntity||entity instanceof SmallHeadlightEntity)){
+            if(event.getItemStack().getItem()==ModItems.YET_ANOTHER_SCREWDRIVER.get()&&(entity instanceof SmallLightConnectorBlockEntity||entity instanceof SmallLightWithReflectorEntity||entity instanceof SmallCageLightEntity||entity instanceof SmallTubeLightEntity||entity instanceof SkinnyTubeLightEntity||entity instanceof SmallHeadlightEntity||entity instanceof SmallArmoredLightEntity)){
                 event.getEntity().swing(event.getHand(), true);
                 if(state.is(CABlocks.SMALL_LIGHT_CONNECTOR.get())){
                     event.getLevel().setBlock(event.getPos(), ModBlocks.SMALL_LIGHT_WITH_REFLECTOR.getDefaultState()
@@ -54,10 +54,16 @@ public class ModEvents {
                             .setValue(SkinnyTubeLight.POWERED, state.getValue(SmallTubeLight.POWERED)), 3);
                 }
                 if(state.is(ModBlocks.SKINNY_TUBE_LIGHT.get())){
+                    event.getLevel().setBlock(event.getPos(), ModBlocks.SMALL_ARMORED_LIGHT.getDefaultState()
+                            .setValue(SmallArmoredLight.FACING, state.getValue(SkinnyTubeLight.FACING))
+                            .setValue(SmallArmoredLight.MODE, state.getValue(SkinnyTubeLight.MODE))
+                            .setValue(SmallArmoredLight.POWERED, state.getValue(SkinnyTubeLight.POWERED)), 3);
+                }
+                if(state.is(ModBlocks.SMALL_ARMORED_LIGHT.get())){
                     event.getLevel().setBlock(event.getPos(), CABlocks.SMALL_LIGHT_CONNECTOR.getDefaultState()
-                            .setValue(SmallLightConnectorBlock.FACING, state.getValue(SkinnyTubeLight.FACING))
-                            .setValue(SmallLightConnectorBlock.MODE, state.getValue(SkinnyTubeLight.MODE))
-                            .setValue(SmallLightConnectorBlock.POWERED, state.getValue(SkinnyTubeLight.POWERED)), 3);
+                            .setValue(SmallLightConnectorBlock.FACING, state.getValue(SmallArmoredLight.FACING))
+                            .setValue(SmallLightConnectorBlock.MODE, state.getValue(SmallArmoredLight.MODE))
+                            .setValue(SmallLightConnectorBlock.POWERED, state.getValue(SmallArmoredLight.POWERED)), 3);
                 }
                 event.setCanceled(true);
             }

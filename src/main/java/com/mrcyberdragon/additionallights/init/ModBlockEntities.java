@@ -32,6 +32,11 @@ public class ModBlockEntities {
             .validBlocks(ModBlocks.SMALL_HEADLIGHT)
             .renderer(() -> ConnectorRenderer::new)
             .register();
+    public static final BlockEntityEntry<SmallArmoredLightEntity> SMALL_ARMORED_LIGHT = AdditionalLights.REGISTRATE
+            .blockEntity("small_armored_light", SmallArmoredLightEntity::new)
+            .validBlocks(ModBlocks.SMALL_ARMORED_LIGHT)
+            .renderer(() -> ConnectorRenderer::new)
+            .register();
 
     public static void register() {}
 }

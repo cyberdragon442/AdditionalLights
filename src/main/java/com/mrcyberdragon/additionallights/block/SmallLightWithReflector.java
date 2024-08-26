@@ -22,7 +22,7 @@ public class SmallLightWithReflector extends AbstractConnectorBlock<SmallLightWi
 
     public static final BooleanProperty POWERED = BlockStateProperties.POWERED;
 
-    public static final VoxelShaper CONNECTOR_SHAPE = CAShapes.shape(6, 0, 6, 10, 5, 10).add(5, 4, 5, 11, 10, 11).forDirectional();
+    public static final VoxelShaper CONNECTOR_SHAPE = CAShapes.shape(5, 0, 5, 11, 5, 11).add(1, 4, 1, 15, 12, 15).forDirectional();
     public SmallLightWithReflector(Properties properties) {
         super(properties);
     }
