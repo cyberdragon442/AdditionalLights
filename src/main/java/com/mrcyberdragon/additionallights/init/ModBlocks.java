@@ -50,6 +50,18 @@ public class ModBlocks {
             .item()
             .transform(customItemModel())
             .register();
+    public static final BlockEntry<SmallGreenSconce> SMALL_GREEN_SCONCE = AdditionalLights.REGISTRATE.block("small_green_sconce",  SmallGreenSconce::new)
+            .initialProperties(SharedProperties::stone)
+            .onRegister(AllMovementBehaviours.movementBehaviour(new NodeMovementBehaviour()))
+            .item()
+            .transform(customItemModel())
+            .register();
+    public static final BlockEntry<SmallEdisonBulb> SMALL_EDISON_BULB = AdditionalLights.REGISTRATE.block("small_edison_bulb",  SmallEdisonBulb::new)
+            .initialProperties(SharedProperties::stone)
+            .onRegister(AllMovementBehaviours.movementBehaviour(new NodeMovementBehaviour()))
+            .item()
+            .transform(customItemModel())
+            .register();
     public static void register() {
 
     }

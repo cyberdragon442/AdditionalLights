@@ -6,6 +6,8 @@
     "block.morelights.skinny_tube_light": "Small Thin Tube Light",
     "block.morelights.pyle_headlight": "Locomotive Headlight",
     "block.morelights.small_armored_light": "Small Armored Light",
+    "block.morelights.small_green_sconce": "Small Banker's Light",
+    "block.morelights.small_edison_bulb": "Small Edison Bulb",
     "tab.morelightstab": "Create: Additional Lights",
     "item.morelights.yet_another_screwdriver": "Y.A.S.S (Yet Another Standard Screwdriver)"
 }

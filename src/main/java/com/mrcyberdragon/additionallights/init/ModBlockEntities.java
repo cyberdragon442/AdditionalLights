@@ -37,6 +37,16 @@ public class ModBlockEntities {
             .validBlocks(ModBlocks.SMALL_ARMORED_LIGHT)
             .renderer(() -> ConnectorRenderer::new)
             .register();
+    public static final BlockEntityEntry<SmallGreenSconceEntity> SMALL_GREEN_SCONCE = AdditionalLights.REGISTRATE
+            .blockEntity("small_green_sconce", SmallGreenSconceEntity::new)
+            .validBlocks(ModBlocks.SMALL_GREEN_SCONCE)
+            .renderer(() -> ConnectorRenderer::new)
+            .register();
+    public static final BlockEntityEntry<SmallEdisonBulbEntity> SMALL_EDISON_BULB = AdditionalLights.REGISTRATE
+            .blockEntity("small_edison_bulb", SmallEdisonBulbEntity::new)
+            .validBlocks(ModBlocks.SMALL_EDISON_BULB)
+            .renderer(() -> ConnectorRenderer::new)
+            .register();
 
     public static void register() {}
 }
