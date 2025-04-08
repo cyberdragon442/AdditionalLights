@@ -3,6 +3,7 @@ package com.mrcyberdragon.additionallights.init;
 import com.mrcyberdragon.additionallights.AdditionalLights;
 import com.mrcyberdragon.additionallights.block.*;
 import com.mrh0.createaddition.blocks.connector.base.ConnectorRenderer;
+import com.simibubi.create.content.fluids.tank.FluidTankRenderer;
 import com.tterrag.registrate.util.entry.BlockEntityEntry;
 
 public class ModBlockEntities {

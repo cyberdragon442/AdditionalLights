@@ -71,7 +71,7 @@ description='''Adds more electric lights to Create: Crafts and Additions'''
 [[dependencies.morelights]]
     modId="flywheel"
     mandatory=true
-    versionRange="[0.6.9.a,0.7)"
+    versionRange="[1.0,)"
     ordering="AFTER"
     side="CLIENT"
 
